@@ -35,7 +35,7 @@
 	{
 		font-family: 'Anaheim', sans-serif;
 		font-weight: 300;
-		color: #3b0501;
+		color: #030303;
 	}
 
 	strong, b
@@ -72,7 +72,7 @@
 
 	h1, h2, h3, h4, h5, h6
 	{
-		color: #3b0501;
+		color: #48bfea;
 		font-weight: 700;
 		font-family: 'Anaheim', sans-serif;
 	}
@@ -85,7 +85,7 @@
 
 	a
 	{
-		color: #d52349;
+		color: #ed7521;
 		text-decoration: underline;
 	}
 	
@@ -245,7 +245,7 @@
 		.thumb {
 			width: 10%;
 			height: 10%;
-			border: 1px solid #be2f26;
+			border: 1px solid #f4b416;
 		}
 
 		.product-image {
@@ -334,7 +334,7 @@
 			cursor: pointer;
 			border: 0;
 			border-radius: 5px;
-			background: #be2f26;
+			background: #f4b416;
 			color: #fff !important;
 			font-weight: 700;
 			outline: 0;
@@ -350,7 +350,7 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background: #e53359;
+				background: #c59728;
 			}
 			
 			input[type="button"]:active,
@@ -366,7 +366,7 @@
 			input[type="reset"].alt,
 			.button.alt
 			{
-				background: #450401;
+				background: #ed7521;
 			}
 
 				input[type="button"].alt:hover,
@@ -374,7 +374,7 @@
 				input[type="reset"].alt:hover,
 				.button.alt:hover
 				{
-					background: #353132;
+					background: #b96630;
 				}
 				
 				input[type="button"].alt:active,
@@ -727,7 +727,7 @@
 
 	#banner
 	{
-		background: #CCE8F4 url('../images/MB01.png') center center fixed;
+		background: #f4b416 url('../images/MB01.png') center center fixed;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
 		text-align: center;
@@ -735,7 +735,7 @@
 
 		#banner header
 		{
-			background-color: #450401;
+			background-color: #48bfea;
 		}
 
 				#banner header img
@@ -752,8 +752,9 @@
 			
 			#banner header p
 			{
-				color: #be2f26;
+				color: #ffffff;
 				padding: 0;
+				font-weight: 700;
 				font-style: normal;
 				margin: 0;
 			}

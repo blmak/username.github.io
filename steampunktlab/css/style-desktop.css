@@ -250,7 +250,7 @@
 		
 			#nav > ul > li.active > a
 			{
-				background: #be2f26;
+				background: #48bfea;
 			}
 			
 		#nav > ul > li.current
@@ -259,7 +259,7 @@
 		
 			#nav > ul > li.current > a
 			{
-				background: #be2f26;
+				background: #48bfea;
 				color: #fff !important;
 				font-weight: 700;
 			}
@@ -334,7 +334,7 @@
 		#banner header
 		{
 			display: inline-block;
-			padding: 2.5em 5em;
+			padding: 1em 3em;
 			border-radius: 5px;
 		}
 		
