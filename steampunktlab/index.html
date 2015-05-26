@@ -46,10 +46,33 @@
 
 						
 					<!-- Banner -->
+
+					<script>
+	var slideShow =
+		[
+    	{"image":"MB01.png", "text":"Re:Cycled Re:Usable bags by Brooklyn Artists"},
+    	{"image":"main1.jpg", "text":"Politically inspired"},
+    	{"image":"main2.jpg", "text":"Strong yet insanely fashionable"}
+	]
+	var count = 0;
+	setInterval(mainSlideShow, 3000);
+	function mainSlideShow() {
+		if (count >= 3 ) {
+				count = 0;
+		}
+ 	 	image = "url('images/" + slideShow[count].image + "')";
+			/*$('.banner').html(image);*/
+		$('#banner').css("background-image", image); 
+		$('.mainSlideText').html(slideShow[count].text) 
+
+		count++;
+	}
+
+				</script>
 						<section id="banner">
 							<header>
 
-								<p>Re:Cycled, Re:Usable bags by Brooklyn Artists.</p>
+								<p class="mainSlideText">Re:Cycled, Re:Usable bags by Brooklyn Artists.</p>
 							</header>
 						</section>
 
