@@ -727,7 +727,7 @@
 
 	#banner
 	{
-		background: #f4b416 url('../images/MB01.png') center center fixed;
+		background: #cce8f4 url('../images/MB01.png') center center fixed;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
 		text-align: center;
@@ -735,7 +735,7 @@
 
 		#banner header
 		{
-			background-color: #48bfea;
+			background-color: #f4b416;
 		}
 
 				#banner header img
@@ -819,7 +819,7 @@
 	
 		#footer-wrapper a
 		{
-			color: #c5c4c4;
+			color: #f4b416;
 		}
 		
 		#footer-wrapper h2,
