@@ -13,15 +13,16 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="index_files/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="index_files/jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
    
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="index_files/ie-emulation-modes-warning.js"></script>
+    <script src="javascript/ie-emulation-modes-warning.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -29,27 +30,55 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <script src="javascript/jquery.slicknav.min.js"></script>
+
+    <link href="css/main.css" rel="stylesheet">
+
+    <script>
+$(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
+</script>
+
   </head>
 
   <body>
 
 <div class="container">
+
+
+<div id="nav-trigger">
+    <span>Menu</span>
+</div>
+<nav id="nav-mobile"></nav>
+
   <div id="top-nav" class="fixed-nav">
     <img src="logo-small.gif" class="img-responsive nav-img">
     <br>
-    <ul class="menu_list">
+<nav id="nav-main">
+    <ul>
       <li role="presentation"><a href="#about">About</a></li>
       <li role="presentation"><a href="#yoga">Yoga</a></li>
       <li role="presentation"><a href="#bodywork">BodyWork</a></li>
       <li role="presentation"><a href="#schedule">Schedule</a></li>
       <li role="presentation"><a href="#contact">Contact</a></li>
     </ul>
+</nav>
  
   </div>
 
   <div class="col-lg-12">
-    <img src="photos/jolene-class.jpg" class="img-responsive">
+    <img src="photos/jolene-class.jpg" class="img-responsive main-image">
     <img src="catchphrase.gif" class="img-responsive">
   </div>
 
@@ -217,6 +246,12 @@
           </tr>
           <tr>
             <td>Mondays</td>
+            <td>11:00-12:00</td>
+            <td>Toddler Yoga</td>
+            <td>Manny Cantor Ctr</td>
+          </tr>
+          <tr>
+            <td>Mondays</td>
             <td>3:30-4:15</td>
             <td>Kid's Yoga</td>
             <td>Dou Yoga</td>
@@ -317,7 +352,7 @@
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="index_files/ie10-viewport-bug-workaround.js"></script>
+    <script src="javascript/ie10-viewport-bug-workaround.js"></script>
   
 
 </body></html>
