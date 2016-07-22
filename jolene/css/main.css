@@ -40,27 +40,27 @@ div.row {
    padding-bottom: 10px;
 }
 
-
-
 @font-face {
 font-family: Bowhouse;
-src: url(fonts/Bowhouse-Bold.otf);
+src: url(../fonts/Bowhouse-Regular.otf);
 }
 
 @font-face {
 font-family: Bowhouse;
-src: url(fonts/Bowhouse-Black.otf);
+src: url(../fonts/Bowhouse-Bold.otf);
 }
 
 @font-face {
 font-family: Bowhouse;
-src: url(fonts/Bowhouse-Light.otf);
+src: url(../fonts/Bowhouse-Black.otf);
 }
 
 @font-face {
 font-family: Bowhouse;
-src: url(fonts/Bowhouse-Regular.otf);
+src: url(../fonts/Bowhouse-Light.otf);
 }
+
+
 
 .image-border {
   border: 3px solid #D0D0D0;
@@ -159,6 +159,7 @@ a:hover {
     display: inline-block;
     padding: 10px 30px;
     background-color: #c32026;
+    font-family: 'Bowhouse', "Arial", sans-serif; 
     color: white;
     cursor: pointer;
     text-transform: uppercase; }
@@ -172,7 +173,9 @@ a:hover {
       border-top: solid 10px #fff;
       border-right: solid 10px transparent; }
     #nav-trigger span:hover {
-      background-color: #e6002d; }
+      background-color: #e6002d;
+      font-family: 'Bowhouse', "Arial", sans-serif;  
+    }
     #nav-trigger span.open:after {
       border-left: solid 10px transparent;
       border-top: none;
@@ -200,6 +203,7 @@ nav#nav-main {
   nav#nav-main a {
     display: block;
     color: #4c4c4c;
+    font-family: 'Bowhouse', "Arial", sans-serif; 
     padding: 10px 6px; }
     nav#nav-main a:hover {
       color: #4c5c5c }
@@ -228,6 +232,7 @@ nav#nav-mobile {
   nav#nav-mobile a {
     display: block;
     color: white;
+    font-family: 'Bowhouse', "Arial", sans-serif; 
     padding: 10px 5px; }
     nav#nav-mobile a:hover {
       background-color: #e6002d;
